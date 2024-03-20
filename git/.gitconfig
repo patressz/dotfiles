@@ -1,0 +1,9 @@
+[user]
+	email = patrik.strisovsky7@gmail.com
+	name = Patrik Strišovský
+[core]
+    excludesfile = ~/.gitignore_global
+[pull]
+    rebase = false
+[init]
+	defaultBranch = main
