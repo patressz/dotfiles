@@ -52,6 +52,7 @@ alias pesttype="php -d memory_limit=2G ./vendor/bin/pest --type-coverage"
 # Git
 alias wip="git add . && git commit -m 'wip'"
 alias typo="git add . && git commit -m 'Fix typo'"
+alias formatting="git add . && git commit -m 'Formatting'"
 alias uncommit="git reset --soft HEAD~1"
 
 # Docker
