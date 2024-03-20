@@ -20,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 #--------------------------------------------------------------------------
 
 export PATH="$HOME/bin:$PATH";
+export PATH="/opt/homebrew/bin:$PATH"
 
 #--------------------------------------------------------------------------
 # Aliases
@@ -60,3 +61,21 @@ alias da="docker compose exec php php artisan"
 alias de="docker compose exec"
 alias dad="docker compose -f docker-compose-dev.yml exec php php artisan"
 alias dbash="docker compose exec php bash"
+
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/patrikstrisovsky/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+
+# Herd injected PHP binary.
+export PATH="/Users/patrikstrisovsky/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/patrikstrisovsky/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/patrikstrisovsky/Library/Application Support/Herd/config/php/82/"
