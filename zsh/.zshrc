@@ -46,6 +46,7 @@ alias tinker="php artisan tinker"
 # Packages
 alias pint="./vendor/bin/pint --dirty"
 alias phpstan="./vendor/bin/phpstan analyse --memory-limit=2G"
+alias phpstanbase="./vendor/bin/phpstan --generate-baseline"
 alias pest="./vendor/bin/pest"
 alias pesttype="php -d memory_limit=2G ./vendor/bin/pest --type-coverage"
 
