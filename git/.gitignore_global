@@ -3,5 +3,3 @@
 .LSOverride
 .ssh
 _ide_helper.php
-.prettierrc
-.prettierignore
