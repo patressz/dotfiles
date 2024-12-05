@@ -5,6 +5,7 @@
 _ide_helper.php
 .prettierrc
 .prettierignore
+_ide_helper.php
 /storage/pail
 /storage/debugbar
 /storage/media-library
