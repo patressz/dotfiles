@@ -9,6 +9,7 @@ HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
+    artisan
     git
     docker-compose
 )
@@ -63,3 +64,11 @@ alias da="docker compose exec php php artisan"
 alias de="docker compose exec"
 alias dad="docker compose -f docker-compose-dev.yml exec php php artisan"
 alias dbash="docker compose exec php bash"
+
+# Tmux
+alias t="tmux"
+alias tls="tmux ls"
+alias tks="tmux kill-server"
+alias tkss="tmux kill-session -t"
+alias tn="tmux new -s"
+alias ta="tmux attach -t"
