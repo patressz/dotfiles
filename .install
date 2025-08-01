@@ -14,3 +14,9 @@ ln -sf $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
+
+# Artisan plugin for Oh My Zsh
+if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/artisan" ]; then
+  git clone https://github.com/jessarcher/zsh-artisan.git \
+    "$HOME/.oh-my-zsh/custom/plugins/artisan"
+fi
